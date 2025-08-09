@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../src/components/card.js"],
+  "sourcesContent": ["import { LitElement, html, css } from 'lit';\n\nclass MyElement extends LitElement {\n  static styles = css`\n    p {\n      color: darkgreen;\n      font-size: 1.2rem;\n    }\n  `;\n\n  render() {\n    return html`<p>Hello from a Lit component!rr</p>`;\n  }\n}\n\ncustomElements.define('lit-card', MyElement);"],
+  "mappings": "sDAEA,IAAMA,EAAN,cAAwBC,CAAW,CACjC,OAAO,OAASA;AAAA;AAAA;AAAA;AAAA;AAAA,IAOhB,QAAS,CACP,OAAOC,uCACT,CACF,EAEA,eAAe,OAAO,WAAYF,CAAS",
+  "names": ["MyElement", "i", "x"]
+}

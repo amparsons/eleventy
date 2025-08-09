@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "watch:esbuild": "node build-watch.js",
+    "serve": "npx @11ty/eleventy --serve",
+    "live-reload": "node live-reload.js",
+    "dev": "concurrently \"npm run watch:esbuild\" \"npm run serve\" \"npm run live-reload\"",
+    "build:esbuild": "node build.js",
+    "build:eleventy": "npx @11ty/eleventy",
+    "build": "npm run build:esbuild && npm run build:eleventy"
+  },
+  "dependencies": {
+    "esbuild": "^0.18.11",
+    "lit": "^3.3.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.0"
+  }
+}
